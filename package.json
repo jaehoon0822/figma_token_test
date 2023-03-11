@@ -6,9 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "glo": "token-transformer data/tokens.json theme/global.json global",
+    "light": "token-transformer data/tokens.json theme/light.json global,light global",
+    "dark": "token-transformer data/tokens.json theme/dark.json global,dark global",
+    "theme:create": "node build-theme.js",
+    "theme:token": "run-p global light dark",
+    "theme:delete": "rimraf -rf theme"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "@next/font": "13.2.4",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
@@ -19,5 +27,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.7.2",
+    "token-transformer": "^0.0.30"
   }
 }
