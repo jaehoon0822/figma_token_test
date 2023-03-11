@@ -9,7 +9,7 @@ const INPUT_DIR = 'theme';
 const OUTPUT_DIR = 'theme';
 
 // 멀티 테마 이름
-const THEMES = 'global dark light';
+const THEMES = 'glo dark light';
 
 // 플랫폼 포멧
 // - js (ES6)
@@ -63,7 +63,7 @@ const setCSS = (theme) => ({
     {
       destination: `css/${theme}.css`,
       format: 'css/variables',
-      selector: theme.includes('global') ? ':root' : `.${theme}-theme`,
+      selector: theme.includes('glo') ? ':root' : `.${theme}-theme`,
     },
   ],
 });

@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "global": "token-transformer data/tokens.json theme/global.json global",
+    "glo": "token-transformer data/tokens.json theme/global.json global",
     "light": "token-transformer data/tokens.json theme/light.json global,light global",
     "dark": "token-transformer data/tokens.json theme/dark.json global,dark global",
     "theme:create": "node build-theme.js",
