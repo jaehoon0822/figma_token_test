@@ -37,7 +37,7 @@ jobs:
               # 사용법 참고: https://github.com/EndBug/add-and-commit
               uses: EndBug/add-and-commit@v9
               with:
-                  author_name: jaehoon0822
+                  author_name: Jhoon
                   author_email: jaehoon0822@gmail.com
                   message: "transform. create Theme Files"
                   add: "."
