@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "default": "token-transformer data/tokens.json theme/global.json defalut",
+    "default": "token-transformer data/tokens.json theme/default.json defalut",
     "light": "token-transformer data/tokens.json theme/light.json default,light default",
     "dark": "token-transformer data/tokens.json theme/dark.json default,dark default",
     "theme:create": "node build-theme.js",
